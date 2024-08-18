@@ -31,7 +31,6 @@ export const createBidding = async (req, res) => {
       });
     }
     const user = req.user;
-
     const equipment = await Equipment.findByPk(equipmentId);
     if (!equipment) {
       return res.status(404).json({
