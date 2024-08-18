@@ -15,7 +15,7 @@ import recommendationRoutes from "./recommendation.route.js";
 import reviewRoutes from "./review.route.js";
 import subscriptionRoutes from "./subscription.route.js";
 import financialReportRoutes from "./financial.route.js";
-
+import openaiRoutes from "./openAI.route.js";
 const router = express.Router();
 
 router.use("/userAuth", userAuthRoutes);
@@ -34,5 +34,6 @@ router.use("/recommendations", recommendationRoutes);
 router.use("/reviews", reviewRoutes);
 router.use("/subscription", subscriptionRoutes);
 router.use("/financialReport", financialReportRoutes);
+router.use("/openai", openaiRoutes);
 
 export default router;
